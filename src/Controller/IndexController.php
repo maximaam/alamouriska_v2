@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-#[Route(name: 'app_')]
+#[Route(name: 'app_index_')]
 final class IndexController extends AbstractController
 {
     #[Route('/', name: 'index')]

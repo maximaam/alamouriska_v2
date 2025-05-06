@@ -1,3 +1,34 @@
+:root {
+    --dark-grey: #333333;
+    --mid-grey: #cccccc;
+    --light-grey: #dddddd;
+    --dark-blue: #0B4B85;
+    --light-blue: #1372A9;
+    --purple: #a91372;
+    --light-purple: #962173;
+    --green: #72a913;
+    --yellow: #a99513;
+}
+
+
 body {
-    background-color: skyblue;
+    color: var(--bs-white);
+    background: var(--light-blue);
+    font-family: "Roboto Light", sans-serif;
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    .navbar-brand span {
+        display: none;
+    }
+    body {
+        background: var(--dark-blue) url("../media/images/bg-main.jpg") no-repeat fixed;
+        background-size: cover;
+    }
+    .app-centered {
+        width: 50%;
+    }
+    .user-container {
+        margin-left: 1rem;
+    }
 }
